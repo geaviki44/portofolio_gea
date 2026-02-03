@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengalaman | Portofolio Gea Viki</title>
+    <link rel="stylesheet" href="pengalaman.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Portofolio Gea Viki</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="pengalaman.html" class="active">Pengalaman</a>
+            <a href="skill.html">Skill</a>
+            <a href="sertfikat.html">Sertifikat</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Section Pengalaman -->
+    <section class="experience">
+        <div class="experience-left">
+            <h1>Pengalaman</h1>
+            <hr>
+
+            <div class="item">
+                <h3>Lomba Cerdas Cermat MIPA</h3>
+                <p>
+                    Pada tahun 2019, saya berpartisipasi dalam Lomba
+                    Cerdas Cermat MIPA tingkat Kecamatan.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Anggota OSIS</h3>
+                <p>
+                    Saya aktif sebagai anggota OSIS pada periode 2020–2021.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Lomba Desain Logo</h3>
+                <p>
+                    Mewakili kelas pada ajang pembuatan logo resmi jurusan TKJ.
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-right">
+            <img src="pengalaman.jpg.jpeg" alt="Foto Pengalaman">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Page | 02</p>
+    </footer>
+
+</body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2b2b2b;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.menu a:hover,
+.menu a.active {
+    text-decoration: underline;
+}
+
+/* Experience Section */
+.experience {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 100px;
+    min-height: 80vh;
+}
+
+.experience-left {
+    width: 55%;
+}
+
+.experience-left h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.experience-left hr {
+    width: 90px;
+    border: 1px solid #ffffff;
+    margin-bottom: 40px;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.item h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.item p {
+    font-size: 14px;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+/* Image */
+.experience-right {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-right img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 20px 40px;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+  

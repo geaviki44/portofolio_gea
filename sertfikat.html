@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sertifikat - Gea Viki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar (sama seperti halaman lain) -->
+    <header class="navbar">
+        <div class="logo">Portofolio Gea Viki</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pengalaman.html">Pengalaman</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="sertfikat.html">Sertifikat</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">&#9776;</div>
+    </header>
+
+    <!-- Section Sertifikat -->
+    <section class="sertifikat-section">
+        <div class="left-title">
+            <h1>Sertifikat</h1>
+        </div>
+
+        <div class="sertifikat-grid">
+            <img src="sertifikat3.jpg.jpeg" alt="">
+            <img src="sertifikat4.jpg.jpeg" alt="">
+            <img src="sertifikat5.jpg.jpeg" alt="">
+            <img src="sertifikat1.jpg.jpeg" alt="">
+            <img src="sertifikat2.jpg.jpeg" alt="">
+        </div>
+
+        <div class="page-number">Page | 04</div>
+    </section>
+
+</body>
+</html>
+
+<style>
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    width:100%;
+    padding:18px 60px;
+    background:#1b1b1b;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    font-size:18px;
+    font-weight:600;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    opacity:0.8;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    opacity:1;
+}
+
+.menu-icon{
+    font-size:24px;
+}
+
+/* ================= SERTIFIKAT SECTION ================= */
+
+.sertifikat-section{
+    margin-top:110px; /* supaya tidak ketutup navbar */
+    padding:80px 70px;
+    min-height:100vh;
+    background:linear-gradient(to bottom,#111,#0b0b0b);
+    position:relative;
+}
+
+/* layout kiri judul kanan grid */
+.sertifikat-section{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    gap:40px;
+}
+
+/* Judul kiri */
+.left-title h1{
+    font-size:70px;
+    font-weight:700;
+    border-bottom:3px solid white;
+    width:max-content;
+    padding-bottom:10px;
+}
+
+/* Grid sertifikat */
+.sertifikat-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:35px;
+    align-items:center;
+}
+
+/* gambar */
+.sertifikat-grid img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:6px;
+    border:3px solid #2a2a2a;
+    transition:0.3s;
+    box-shadow:0 8px 18px rgba(0,0,0,0.5);
+}
+
+.sertifikat-grid img:hover{
+    transform:scale(1.06);
+    border-color:white;
+}
+
+/* nomor halaman */
+.page-number{
+    position:absolute;
+    bottom:25px;
+    right:60px;
+    font-size:14px;
+    color:#bbb;
+}

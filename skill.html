@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio Gea Viki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Portofolio Gea Viki</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pengalaman.html">Pengalaman</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="sertfikat.html">Sertifikat</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">&#9776;</div>
+    </header>
+
+    <!-- Galeri Foto -->
+    <section class="gallery">
+        <img src="skill1.jpg.jpeg" alt="">
+        <img src="skill2.jpg.jpeg" alt="">
+        <img src="skill3.jpg.jpeg" alt="">
+        <img src="skill4.jpg.jpeg" alt="">
+        <img src="skill5.jpg.jpeg" alt="">
+    </section>
+
+    <!-- Skill Section -->
+    <section class="skill-section">
+        <h1>Skill</h1>
+        <div class="skills">
+            <div class="skill-box">
+                <h3>Linux Debian</h3>
+                <ul>
+                    <li>Basic command</li>
+                    <li>Web server</li>
+                    <li>Wordpress</li>
+                    <li>Apache2</li>
+                    <li>SSH</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3>Infrastruktur Jaringan</h3>
+                <p>
+                    Memiliki pengalaman praktik dalam melakukan crimping kabel LAN,
+                    penyambungan kabel fiber optik (FO), serta pengikatan kabel fiber
+                    optik pada tiang secara rapi dan sesuai standar teknis.
+                </p>
+            </div>
+
+            <div class="skill-box">
+                <h3>MikroTik</h3>
+                <ul>
+                    <li>Basic configuration hotspot</li>
+                    <li>QoS, PPPoE</li>
+                    <li>Routing Type</li>
+                    <li>Blok situs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-number">Page | 03</div>
+    </section>
+
+</body>
+</html>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ccc;
+}
+
+.menu-icon {
+    font-size: 24px;
+    display: none;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Skill Section */
+.skill-section {
+    padding: 60px 80px;
+    background: #111;
+}
+
+.skill-section h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.skills {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.skill-box {
+    width: 30%;
+}
+
+.skill-box h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.skill-box ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.skill-box p {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* Page number */
+.page-number {
+    text-align: right;
+    margin-top: 80px;
+    font-size: 14px;
+}
